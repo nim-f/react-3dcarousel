@@ -1,0 +1,116 @@
+.slider3d {
+  padding-bottom: 42%;
+  height: 0;
+  position: relative;
+}
+
+.slider3d ul {
+  margin: 0;
+  padding: 0;
+}
+
+.slider3d li {
+  margin: 0;
+}
+
+.slider3d__item {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  width: 62%;
+  height: 0;
+  padding-bottom: 41%;
+  transform: translateX(-50%) scale(0.2);
+  list-style: none;
+  transition: 0.5s;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.slider3d__item img {
+  position: absolute;
+  height: auto;
+  min-height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.slider3d__item.slider3d__item--current {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    width: 62%;
+    transform: translateX(-50%);
+    list-style: none;
+    z-index: 10;
+    transition: 0.5s;
+  }
+
+.slider3d__item--1.slider3d__item--before {
+  transform: scale(0.85) translateX(-79%);
+  z-index: 3;
+}
+
+.slider3d__item--1.slider3d__item--after {
+  transform: scale(0.85) translateX(-38%);
+  z-index: 3;
+}
+
+.slider3d__item--2.slider3d__item--before {
+  transform: scale(0.68) translateX(-124%);
+  z-index: 2;
+}
+
+.slider3d__item--2.slider3d__item--after {
+  transform: scale(0.68) translateX(-23%);
+  z-index: 2;
+}
+
+.slider3d__item--3.slider3d__item--before {
+  z-index: 1;
+  transform: scale(0.5) translateX(-200%);
+}
+
+.slider3d__item--3.slider3d__item--after {
+  transform: scale(0.5) translateX(0%);
+  z-index: 1;
+}
+
+.slider3d nav {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.slider3d__button {
+  background: transparent;
+  border: none;
+}
+
+.slider3d__button:after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 16px;
+  background: transparent url('/images/arrow-down.svg') center center no-repeat;
+  background-size: contain;
+}
+
+.slider3d__button--left {
+  transform: rotate(90deg);
+  position: absolute;
+  left: -5px;
+  top: 27vw;
+}
+
+.slider3d__button--right {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -5px;
+  top: 27vw;
+}

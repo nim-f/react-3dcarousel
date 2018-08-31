@@ -1,7 +1,7 @@
 {
-  "name": "react-component-example-project",
+  "name": "react-3dcarousel",
   "version": "0.1.0",
-  "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
+  "description": "Simple react carousel with 3d effect",
   "main": "lib/index.js",
   "scripts": {
     "dev": "concurrently \"npm run lib:watch\" \"npm run docs\"",
@@ -34,10 +34,13 @@
     "webpack-cli": "^2.0.15",
     "webpack-dev-server": "^3.1.3"
   },
-  "author": "Markus Englund <markus.s.englund@gmail.com>",
-  "homepage": "https://github.com/yogaboll/react-npm-component-starter",
+  "author": "Ann Shakhbazian <fatamorgana9205@gmail.com>",
+  "homepage": "https://github.com/nim-f/react-3dcarousel",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yogaboll/react-npm-component-starter.git"
+    "url": "git@github.com:nim-f/react-3dcarousel.git"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
   }
 }
