@@ -23,7 +23,7 @@ class Demo extends Component {
   renderImages = () => {
     const { photos } = this.state
     if (!photos.length) return <div>Loading...</div>
-    return photos.map((img) => <img key={img.id} src={img.urls.small} alt={"photo"} /> )
+    return photos.map((img) => <img key={img.id} src={img.urls.regular} alt={"photo"} /> )
   }
 
   render() {
