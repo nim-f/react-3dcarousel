@@ -57,7 +57,8 @@ class Carousel extends Component {
   sliderRef = (node) => {this.slider = node}
 
   renderSlides = () => {
-    const { children } = this.props
+    const { children, transition } = this.props
+    console.log(children)
     if (!Array.isArray(children)) return <div></div>
 
     const { classes } = this.state
@@ -67,14 +68,18 @@ class Carousel extends Component {
       let direction = classes[index].classname
 
       return (
-        <li key={index} className={classNames} onClick={() => this.moveSlide(direction, classes[index].id)} >
-          {img}
-          {/*
+        <li key={index}
+            className={classNames}
+            style={{transition: `${transition}ms`}}
+            onClick={() => this.moveSlide(direction, classes[index].id)}
+        >
+
+          {
             classes[index].id < 6 && classes[index].id > -6 ?
-              <img src={img} alt={'slide ' + index} style={{display: 'block'}} />
+              img
               :
-              <img data-src={img} alt={'slide ' + index} style={{display: 'block'}} />
-          */}
+              <img data-src={img.props.src} alt={img.props.src} style={{display: 'block'}} />
+          }
         </li>
       )}
     )

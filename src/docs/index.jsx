@@ -13,7 +13,7 @@ class Demo extends Component {
   }
 
   componentWillMount () {
-    axios.get(`${server}/search/photos/?client_id=${CLIENT_ID}&per_page=10&query=animal&orientation=landscape`)
+    axios.get(`${server}/search/photos/?client_id=${CLIENT_ID}&per_page=50&query=animal&orientation=landscape`)
       .then((res) => {
         console.log(res)
         this.setState({photos: res.data.results})
@@ -30,7 +30,7 @@ class Demo extends Component {
     return (
       <div>
         <h1 style={{textAlign: 'center', margin: '40px 0'}}>Simple react 3d carousel</h1>
-        <Carousel>
+        <Carousel transition={500} lazyLoad={true}>
           {this.renderImages()}
         </Carousel>
       </div>

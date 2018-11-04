@@ -1,5 +1,5 @@
 {
-  "name": "react-3dcarousel",
+  "name": "@nim-ff/react-3dcarousel",
   "version": "0.1.0",
   "description": "Simple react carousel with 3d effect",
   "main": "lib/index.js",

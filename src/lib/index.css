@@ -23,7 +23,6 @@
   padding-bottom: 41%;
   transform: translateX(-50%) scale(0.2);
   list-style: none;
-  transition: 0.5s;
   z-index: 0;
   overflow: hidden;
 }
@@ -47,7 +46,6 @@
     transform: translateX(-50%);
     list-style: none;
     z-index: 10;
-    transition: 0.5s;
   }
 
 .slider3d__item--1.slider3d__item--before {
